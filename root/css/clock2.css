@@ -38,10 +38,7 @@ main {
 }
 #hour, #minute, #second {
     transform-origin: 300px 300px;
-/*    transition: transform .5s ease-in-out;*/ /*adds smooth movement to all hands*/
-}
-#second { /*adds the bounce to the second hand */
-    transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+    transition: transform .5s ease-in-out;
 }
 
 
