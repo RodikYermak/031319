@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 1, events overview</title>
+    <link rel="stylesheet" href="css/sealife.css">
+</head>
+<body>
+  <header>
+      <h1>Sea Life</h1>
+  </header>
+  <section>
+      <article>
+          <h3>Some heading 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quia totam veniam officiis explicabo laborum inventore saepe soluta, molestias. Iusto vitae soluta illum similique ipsam culpa, quos vel molestiae fugiat.</p>
+      </article>
+      <article>
+          <h3>Some heading 2</h3>
+          <p>Itaque odio consequuntur excepturi ad voluptate, ratione eveniet libero error? Pariatur officia sit id quas dicta doloremque quod fuga, aliquam! Nihil iste perspiciatis atque labore est quod voluptates nobis porro.</p>
+      </article>
+      <article>
+          <h3>Some heading 3</h3>
+          <p>Saepe nostrum culpa dolorem quia excepturi, ad praesentium doloribus! Dolores eligendi voluptatem ut aliquid? Optio omnis, eligendi tenetur provident, voluptates temporibus modi ab laboriosam quibusdam quo, nobis hic atque necessitatibus.</p>
+      </article>
+  </section>
+   <aside>
+       <h1>Coral Reefs</h1>
+       <h2>They are important for everyone</h2>
+       <div>
+           <a href="#" class="discoverBtn">Discover more</a>
+           <a href="#"class="tripBtn">Join us</a>
+       </div>
+       <p class="tripMsg">We are so sorry but all of our 2019 trips are currently booked. Please check back in the fall when new 2020 trip information will be available.</p>
+   </aside>
+   <article>
+       <h2>Heading</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae alias, nam veritatis itaque accusantium esse possimus distinctio quibusdam. Ea quibusdam dolorum placeat excepturi dolor voluptates eaque nihil quas atque.</p>
+       <p>Officiis expedita ex temporibus, iusto facere ipsum numquam explicabo laborum optio minima molestias sunt, facilis pariatur quas, corporis hic! Aperiam consequuntur voluptatum porro sed aliquam similique dignissimos, sint blanditiis, tempora.</p>
+   </article>
+    <footer>&copy; 2019</footer>
+    
+    <script>
+    //https://developer.mozilla.org/en-US/docs/Web/Events
+        const TRIPBTN = document.querySelector('.tripBtn');
+        const MSG = document.querySelector('.tripMsg');
+        
+        MSG.classList.add('hideIt');
+        
+        function showMsg(e){
+            e.preventDefault();
+            MSG.classList.toggle('hideIt');
+        }
+        
+        TRIPBTN.onclick = showMsg;
+        
+    </script>
+    
+</body>
+</html>
