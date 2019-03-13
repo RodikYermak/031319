@@ -51,7 +51,11 @@
             MSG.classList.toggle('hideIt');
         }
         
-        TRIPBTN.onclick = showMsg;
+//        TRIPBTN.onclick = showMsg;
+//        TRIPBTN.onclick = console.log('the button has been clicked');
+        
+        TRIPBTN.addEventListener('click',showMsg,false);
+        TRIPBTN.addEventListener('click',function(){console.log('the button has been clicked');}, false);
         
     </script>
     
